@@ -1,0 +1,128 @@
+<!-- Main navigation -->
+<header>
+
+    <!--Navbar-->
+    <mdb-navbar SideClass="navbar  cyan darken-2 navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+        <mdb-navbar-brand>
+            <a class="logo font-small navbar-brand waves-light animated fadeInLeft" mdbWavesEffect href="#">
+
+
+                <strong class="animated fadeInUpBig" *ngIf="!show">VINCULACIÓN DEL CAMBIO GLOBAL CON
+                    LA CONSERVACIÓN DEL SUELO Y EL AGUA</strong>
+
+                <strong class="animated fadeInUpBig" *ngIf="show">LINKING GLOBAL CHANGE WITH SOIL AND WATER
+                    CONSERVATION</strong>
+
+            </a>
+
+
+        </mdb-navbar-brand>
+        <links>
+            <ul class="font-small navbar-nav ml-auto animated fadeInRight">
+
+                <li class="nav-item  waves-light" [routerLinkActive]="['active']" mdbWavesEffect>
+                    <a class="nav-link" routerLink="/inicio" *ngIf="!show">Incio </a>
+                    <a class="nav-link" routerLink="/inicio" *ngIf="show">Home </a>
+                </li>
+
+                <li class="nav-item waves-light" [routerLinkActive]="['active']" mdbWavesEffect>
+                    <a class="nav-link" routerLink="/noticias" *ngIf="!show">Noticias</a>
+                    <a class="nav-link" routerLink="/noticias" *ngIf="show">News</a>
+                </li>
+                <li class="nav-item waves-light" [routerLinkActive]="['active']" mdbWavesEffect>
+                    <a class="nav-link" routerLink="/contactos" *ngIf="!show">Contactos</a>
+                    <a class="nav-link" routerLink="/contactos" *ngIf="show">Contacts</a>
+                </li>
+            </ul>
+
+
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <a type="button" (click)="cambiarIdioma()" mdbBtn floating="true" size="st" 
+                    mdbWavesEffect><i class="flag-icon flag-icon-gb"></i></a>
+                <a type="button" (click)="cambiarIdioma()" mdbBtn floating="true" size="st"
+                    mdbWavesEffect><i class="flag-icon flag-icon-es"></i></a>
+
+            </div>
+
+
+        </links>
+
+
+    </mdb-navbar>
+
+    <!-- Full Page Intro -->
+    <div class="view "
+        style="background-image: url('./assets/img/IMG_0616.JPG'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+        <!-- Mask & flexbox options-->
+        <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+            <!-- Content -->
+            <div class="container">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="fadeIn animated col-md-6 white-text text-center text-md-left mt-xl-5 mb-5 wow "
+                        data-wow-delay="0.3s">
+                        <h1 class="h1-responsive font-weight-bold mt-sm-5"  class="fadeIn animated" *ngIf="!show">Vinculación del cambio global
+                            con la
+                            conservación del suelo y el agua en los altos Andes</h1>
+                        <h1 class="h1-responsive font-weight-bold mt-sm-5"  class="fadeIn animated" *ngIf="show">
+
+                            Linking global change with soil and water conservation in the High Andes
+
+                        </h1>
+                        <hr class="hr-light">
+                        <h6 class="mb-4"*ngIf="!show" class="fadeIn animated">
+                            Contribuir a la gestión sostenible de los servicios de agua en los ecosistemas de páramo
+                            mediante la generación de evidencia científica sobre la conservación y restauración de los
+                            suelos del páramo, y sobre su función de regulación hidrológica vital en los Andes.
+                        </h6>
+                        <h6 class="mb-4" *ngIf="show" class="fadeIn animated">
+                            The project will contribute to sustainable ecosystem management by strengthening evidence-based
+                            research on conservation and restoration of páramo soils, and on their vital hydrological
+                            regulation function in the High Andes.
+                        </h6>
+
+                       
+
+                        <a data-scroll mdbBtn class="fadeInLeft animated" *ngIf="!show" color="white" outline="true" mdbWavesEffect
+                            href="inicio#leermas">Entérate</a>
+
+                            <a data-scroll mdbBtn class="fadeInLeft animated" *ngIf="show" color="white" outline="true" mdbWavesEffect
+                            href="inicio#leermas">Find out</a>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+
+                    <div class=" fadeIn animated col-md-6 col-xl-5 mt-xl-5 wow " data-wow-delay="0.3s">
+                        <br><br><br>
+                        <app-carrousel-portada></app-carrousel-portada>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </div>
+            <!-- Content -->
+        </div>
+        <!-- Mask & flexbox options-->
+    </div>
+    <!-- Full Page Intro -->
+</header>
+<!-- Main navigation -->
+
+
+
+
+
+
+
+<app-resumen id="leermas" class=" fadeInUpBig animated" [show]="show"></app-resumen>
+
+<app-problemas ></app-problemas>
+
+<app-socios-academicos></app-socios-academicos>
+
+<app-empresas-asociadas></app-empresas-asociadas>
+
+<app-equipo></app-equipo>
+
+<app-contacto></app-contacto>
