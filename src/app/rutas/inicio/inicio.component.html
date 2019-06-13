@@ -30,8 +30,8 @@
                     <a class="nav-link" routerLink="/noticias" *ngIf="show">News</a>
                 </li>
                 <li class="nav-item waves-light" [routerLinkActive]="['active']" mdbWavesEffect>
-                    <a class="nav-link" routerLink="/contactos" *ngIf="!show">Contactos</a>
-                    <a class="nav-link" routerLink="/contactos" *ngIf="show">Contacts</a>
+                    <a class="nav-link" routerLink="/datos" *ngIf="!show">Datos</a>
+                    <a class="nav-link" routerLink="/datos" *ngIf="show">Data</a>
                 </li>
             </ul>
 
@@ -115,9 +115,13 @@
 
 
 
-<app-resumen id="leermas" class=" fadeInUpBig animated" [show]="show"></app-resumen>
+<app-resumen show="!show"></app-resumen>
 
 <app-problemas ></app-problemas>
+
+<app-sitios-estudio></app-sitios-estudio>
+
+<app-temas-cientificos></app-temas-cientificos>
 
 <app-socios-academicos></app-socios-academicos>
 

@@ -23,9 +23,13 @@ import { EquipoComponent } from './componentes/equipo/equipo.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { NoticiasComponent } from './rutas/noticias/noticias.component';
 import { NoticiaComponenteComponent } from './componentes/noticia-componente/noticia-componente.component';
-import { ContactosRutaComponent } from './rutas/contactos-ruta/contactos-ruta.component';
+
 import { ObjetivosEspecificosComponent } from './componentes/objetivos-especificos/objetivos-especificos.component';
 import { IdiomaService } from './servicios/idioma.service';
+import { SitiosEstudioComponent } from './componentes/sitios-estudio/sitios-estudio.component';
+import { TemasCientificosComponent } from './componentes/temas-cientificos/temas-cientificos.component';
+import { AuspiciantesComponent } from './componentes/auspiciantes/auspiciantes.component';
+import { DatosComponent } from './rutas/datos/datos.component';
 
 @NgModule({
   declarations: [
@@ -41,8 +45,12 @@ import { IdiomaService } from './servicios/idioma.service';
     ContactoComponent,
     NoticiasComponent,
     NoticiaComponenteComponent,
-    ContactosRutaComponent,
+    
     ObjetivosEspecificosComponent,
+    SitiosEstudioComponent,
+    TemasCientificosComponent,
+    AuspiciantesComponent,
+    DatosComponent,
 
   ],
   imports: [

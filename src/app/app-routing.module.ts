@@ -3,7 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { PruebasComponent } from './pruebas/pruebas.component';
 import { InicioComponent } from './rutas/inicio/inicio.component';
 import { NoticiasComponent } from './rutas/noticias/noticias.component';
-import { ContactosRutaComponent } from './rutas/contactos-ruta/contactos-ruta.component';
+
+import { DatosComponent } from './rutas/datos/datos.component';
 
 const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: "inicio" },
@@ -23,9 +24,10 @@ const routes: Routes = [
     path: 'noticias',
     component: NoticiasComponent,
   },
+ 
   {
-    path:'contactos',
-    component:ContactosRutaComponent
+    path:'datos',
+    component:DatosComponent
   }
 
 ];
