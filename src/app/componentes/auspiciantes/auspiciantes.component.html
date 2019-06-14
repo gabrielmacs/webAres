@@ -1,36 +1,30 @@
-<div class="w3-container w3-red">
+ <div class="w3-container w3-red" *ngIf="!ingles">
   <!-- Section: Team v.2 -->
   <section class="team-section text-center my-5">
 
     <!-- Section heading -->
-    <h2 class="h1-responsive font-weight-bold my-5">Socios Académicos</h2>
-    <!-- Section description -->
-    <h5 class="grey-text w-responsive mx-auto mb-5">Nuestros socios académicos en Ecuador son dos universidades
-      nacionales ubicadas en las dos ciudades más grandes de los Andes ecuatorianos (Quito y Cuenca): la Escuela
-      Politécnica Nacional (y la Universidad de Cuenca) </h5>
-    <h5 class="grey-text w-responsive mx-auto mb-5">El proyecto es una de las primeras iniciativas de investigación
-      en colaboración entre estas dos instituciones. </h5>
+    <h2 class="h1-responsive font-weight-bold my-5">Proyecto financiado por</h2>
+  
 
     <!-- Grid row -->
     <div class="row text-center">
 
       <!-- Grid column -->
-      <div class="col-md-4 mb-md-0 mb-5"></div>
+      <div class="col-md-2 mb-md-0 mb-5"></div>
       <!-- Grid column -->
       <!-- Grid column -->
-      <div class="col-md-4 mb-md-0 mb-5">
+      <div class="col-md-8 mb-md-0 mb-5">
         <div class="avatar mx-auto">
+          <a href="https://www.ares-ac.be/fr/" target="_blank">
           <img
-            src="data:image/png;base64,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"
-            class="rounded z-depth-1-half" alt="Sample avatar">
+            src="data:image/png;base64,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"
+            class="rounded z-depth-1-half" alt="Sample avatar"></a>
         </div>
-        <h4 class="font-weight-bold dark-grey-text my-4">Université catholique de Louvain</h4>
-        <h6 class="text-uppercase grey-text mb-3">
-          <strong>Louvain-la-Neuve</strong>
-        </h6>
+        <h4 class="font-weight-bold dark-grey-text my-4">ARES</h4>
+       
         <!--Email-->
         <a type="button" mdbBtn floating="true" size="sm" class="mx-1 mb-0 btn-email"
-          href="https://uclouvain.be/fr/index.html">
+          href="https://www.ares-ac.be/fr/ " target="_blank">
           <i class="fab fa-dribbble "></i>
         </a>
 
@@ -39,19 +33,58 @@
       <!-- Grid column -->
 
       <!-- Grid column -->
-      <div class="col-md-4 mb-md-0 mb-5">
+      <div class="col-md-2 mb-md-0 mb-5">
       </div>
-      <!-- Grid column -->
-
-
-
-
-
+     
     </div>
-    <!-- Grid row -->
 
   </section>
-  <!-- Section: Team v.2 -->
 
 
 </div>
+
+
+<div class="w3-container w3-red" *ngIf="ingles">
+    <!-- Section: Team v.2 -->
+    <section class="team-section text-center my-5">
+  
+      <!-- Section heading -->
+      <h2 class="h1-responsive font-weight-bold my-5">Funded project by</h2>
+    
+  
+      <!-- Grid row -->
+      <div class="row text-center">
+  
+        <!-- Grid column -->
+        <div class="col-md-2 mb-md-0 mb-5"></div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="col-md-8 mb-md-0 mb-5">
+          <div class="avatar mx-auto">
+            <a href="https://www.ares-ac.be/fr/">
+            <img
+              src="data:image/png;base64,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"
+              class="rounded z-depth-1-half" alt="Sample avatar"></a>
+          </div>
+          <h4 class="font-weight-bold dark-grey-text my-4">ARES</h4>
+         
+          <!--Email-->
+          <a type="button" mdbBtn floating="true" size="sm" class="mx-1 mb-0 btn-email"
+            href="https://www.ares-ac.be/fr/">
+            <i class="fab fa-dribbble "></i>
+          </a>
+  
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-2 mb-md-0 mb-5">
+        </div>
+       
+      </div>
+  
+    </section>
+  
+  
+  </div>

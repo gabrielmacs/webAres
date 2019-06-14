@@ -1,47 +1,48 @@
 <mdb-navbar SideClass="navbar  cyan darken-2 navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-  <mdb-navbar-brand>
-      <a class="logo font-small navbar-brand waves-light animated fadeInLeft" mdbWavesEffect href="#">
+    <mdb-navbar-brand>
+        <a class="logo font-small navbar-brand waves-light animated fadeInLeft" mdbWavesEffect href="#">
 
 
-          <strong class="animated fadeInUpBig" *ngIf="!show">VINCULACIÓN DEL CAMBIO GLOBAL CON
-              LA CONSERVACIÓN DEL SUELO Y EL AGUA</strong>
+            <strong class="animated fadeInUpBig" *ngIf="!show">VINCULACIÓN DEL CAMBIO GLOBAL CON
+                LA CONSERVACIÓN DEL SUELO Y EL AGUA</strong>
 
-          <strong class="animated fadeInUpBig" *ngIf="show">LINKING GLOBAL CHANGE WITH SOIL AND WATER
-              CONSERVATION</strong>
+            <strong class="animated fadeInUpBig" *ngIf="show">LINKING GLOBAL CHANGE WITH SOIL AND WATER
+                CONSERVATION</strong>
 
-      </a>
-
-
-  </mdb-navbar-brand>
-  <links>
-      <ul class="font-small navbar-nav ml-auto animated fadeInRight">
-
-          <li class="nav-item  waves-light" [routerLinkActive]="['active']" mdbWavesEffect>
-              <a class="nav-link" routerLink="/inicio" *ngIf="!show">Inicio </a>
-              <a class="nav-link" routerLink="/inicio" *ngIf="show">Home </a>
-          </li>
-
-          <li class="nav-item waves-light" [routerLinkActive]="['active']" mdbWavesEffect>
-              <a class="nav-link" routerLink="/noticias" *ngIf="!show">Noticias</a>
-              <a class="nav-link" routerLink="/noticias" *ngIf="show">News</a>
-          </li>
-          <li class="nav-item waves-light" [routerLinkActive]="['active']" mdbWavesEffect>
-              <a class="nav-link" routerLink="/datos" *ngIf="!show">Datos</a>
-              <a class="nav-link" routerLink="/datos" *ngIf="show">Data</a>
-          </li>
-      </ul>
+        </a>
 
 
-      <div class="btn-group" role="group" aria-label="Basic example">
-          <a type="button" (click)="cambiarIdioma()" mdbBtn floating="true" size="st" 
-              mdbWavesEffect><i class="flag-icon flag-icon-gb"></i></a>
-          <a type="button" (click)="cambiarIdioma()" mdbBtn floating="true" size="st"
-              mdbWavesEffect><i class="flag-icon flag-icon-es"></i></a>
+    </mdb-navbar-brand>
+    <links>
+        <ul class="font-small navbar-nav ml-auto animated fadeInRight">
 
-      </div>
+            <li class="nav-item  waves-light" [routerLinkActive]="['active']" mdbWavesEffect>
+                <a class="nav-link" routerLink="/inicio" *ngIf="!show">Inicio </a>
+                <a class="nav-link" routerLink="/inicio" *ngIf="show">Home </a>
+            </li>
+
+            <li class="nav-item waves-light" [routerLinkActive]="['active']" mdbWavesEffect>
+                <a class="nav-link" routerLink="/noticias" *ngIf="!show">Noticias</a>
+                <a class="nav-link" routerLink="/noticias" *ngIf="show">News</a>
+            </li>
+            <li class="nav-item waves-light" [routerLinkActive]="['active']" mdbWavesEffect>
+                <a class="nav-link" routerLink="/datos" *ngIf="!show">Datos</a>
+                <a class="nav-link" routerLink="/datos" *ngIf="show">Data</a>
+            </li>
+        </ul>
 
 
-  </links>
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <a type="button" (click)="cambiarIdioma()" *ngIf="!show" mdbBtn floating="true" size="lg" mdbWavesEffect><i
+                    class="flag-icon flag-icon-gb"></i></a>
+            <a type="button" (click)="cambiarIdioma()" *ngIf="show" mdbBtn floating="true" size="lg" mdbWavesEffect><i
+                    class="flag-icon flag-icon-es"></i></a>
+
+        </div>
+
+
+
+    </links>
 
 
 

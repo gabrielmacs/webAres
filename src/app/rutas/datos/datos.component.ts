@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DatosComponent implements OnInit {
 
-  constructor() { }
+  show: boolean=false;
+    constructor() { }
 
   ngOnInit() {
   }

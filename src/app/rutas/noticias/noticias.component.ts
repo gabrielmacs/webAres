@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./noticias.component.scss']
 })
 export class NoticiasComponent implements OnInit {
-
+  show: boolean=false;
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }

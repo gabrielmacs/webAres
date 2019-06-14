@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-auspiciantes',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./auspiciantes.component.scss']
 })
 export class AuspiciantesComponent implements OnInit {
+
+  @Input() ingles:boolean;
 
   constructor() { }
 

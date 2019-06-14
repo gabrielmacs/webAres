@@ -3,32 +3,38 @@
 <section class=" fadeInUpBig animated">
 
     <!--Section heading-->
+    
     <h2 class="h1 py-5 font-weight-bold text-center" *ngIf="!show">Resumen del proyecto</h2>
     <h2 class="h1 py-5 font-weight-bold text-center" *ngIf="show">Project summary</h2>
     <!--Section description-->
 
 
     <!--Grid row-->
-    <div class="row pt-2">
+    <div class="row ">
 
         <!--Grid column-->
-        <div class="col-lg-5  text-center">
-            <img src="./assets/img/IMG_1104.JPG" alt="" class=" z-depth-4">
-            <img src="./assets/img/IMG_1183.JPG" alt="" class=" z-depth-4">
-
+        <div class="col-lg-4  text-center offset-md-1">
+            <div class="zoom">
+                <img src="./assets/img/IMG_1104.JPG" alt="" class=" ">
+            </div>
+            <div class="zoom">
+                <img src="./assets/img/IMG_1183.JPG" alt="" class=" z-depth-4">
+            </div>
+            <br>
         </div>
+    
         <!--Grid column-->
 
 
         <!--Grid column-->
         <div class="col-lg-7">
-
+              
             <!--Grid row-->
-            <div class="row pb-3">
+            <div class="row mx-5">
 
-                <div class="col-10" *ngIf="!show">
+                <div class="col-12" *ngIf="!show">
 
-                    <h5 class="font-weight-bold text-left mb-3 dark-grey-text">Antecedentes</h5>
+                    <h5 class="font-weight-bold text-left  dark-grey-text">Antecedentes</h5>
                     <p class="grey-text  text-justify">
                         En marzo de 2016, se llevó a cabo un taller en Quito para
                         identificar las
@@ -48,7 +54,7 @@
                 </div>
 
 
-                <div class="col-10" *ngIf="show">
+                <div class="col-12" *ngIf="show">
 
                     <h5 class="font-weight-bold text-left mb-3 dark-grey-text">Background</h5>
                     <p class="grey-text  text-justify">
@@ -68,9 +74,9 @@
             <!--Grid row-->
 
             <!--Grid row-->
-            <div class="row pb-3" *ngIf="!show">
+            <div class="row mx-5" *ngIf="!show">
 
-                <div class="col-10">
+                <div class="col-12">
                     <h5 class="font-weight-bold text-left mb-3 dark-grey-text">Objetivo</h5>
                     <p class="grey-text  text-justify">Contribuir a la gestión sostenible de los
                         ecosistemas mediante el fortalecimiento de la investigación basada en la evidencia sobre la
@@ -85,9 +91,9 @@
 
 
 
-            <div class="row pb-3" *ngIf="show">
+            <div class="row mx-5" *ngIf="show">
 
-                <div class="col-10">
+                <div class="col-12">
                     <h5 class="font-weight-bold text-left mb-3 dark-grey-text">Objective</h5>
                     <p class="grey-text  text-justify">The project will contribute to sustainable ecosystem management
                         by strengthening evidence-based research
@@ -99,10 +105,10 @@
             <!--Grid row-->
 
             <!--Grid row-->
-            <div class="row pb-3" *ngIf="!show">
+            <div class="row mx-5" *ngIf="!show">
 
 
-                <div class="col-10">
+                <div class="col-12">
                     <h5 class="font-weight-bold text-left mb-3 dark-grey-text">Sinergias</h5>
                     <p class="grey-text text-justify">Este enfoque proporcionará la base para fomentar la
                         coordinación, el
@@ -118,10 +124,10 @@
 
 
             </div>
-            <div class="row pb-3" *ngIf="show">
+            <div class="row mx-5" *ngIf="show">
 
 
-                <div class="col-10">
+                <div class="col-12">
                     <h5 class="font-weight-bold text-left mb-3 dark-grey-text">Synergies</h5>
                     <p class="grey-text text-justify"> This approach will provide the basis for fostering
                         coordination, data sharing and implementation of specific research activities. In turn,
