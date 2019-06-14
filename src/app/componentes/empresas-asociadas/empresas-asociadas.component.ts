@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-empresas-asociadas',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./empresas-asociadas.component.scss']
 })
 export class EmpresasAsociadasComponent implements OnInit {
-
+  @Input () ingles:boolean;
   constructor() { }
 
   ngOnInit() {

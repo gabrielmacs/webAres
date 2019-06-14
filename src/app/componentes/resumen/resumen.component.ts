@@ -15,9 +15,5 @@ export class ResumenComponent implements OnInit {
   ngOnInit() {
   } 
 
-  if (show){
-    console.log(show)
-
-  }
-
+  
 }

@@ -21,7 +21,7 @@
             <ul class="font-small navbar-nav ml-auto animated fadeInRight">
 
                 <li class="nav-item  waves-light" [routerLinkActive]="['active']" mdbWavesEffect>
-                    <a class="nav-link" routerLink="/inicio" *ngIf="!show">Incio </a>
+                    <a class="nav-link" routerLink="/inicio" *ngIf="!show">Inicio </a>
                     <a class="nav-link" routerLink="/inicio" *ngIf="show">Home </a>
                 </li>
 
@@ -37,9 +37,9 @@
 
 
             <div class="btn-group" role="group" aria-label="Basic example">
-                <a type="button" (click)="cambiarIdioma()" mdbBtn floating="true" size="st" 
+                <a type="button" (click)="cambiarIdioma()" *ngIf="!show" mdbBtn floating="true" size="lg"
                     mdbWavesEffect><i class="flag-icon flag-icon-gb"></i></a>
-                <a type="button" (click)="cambiarIdioma()" mdbBtn floating="true" size="st"
+                <a type="button" (click)="cambiarIdioma()" *ngIf="show" mdbBtn floating="true" size="lg"
                     mdbWavesEffect><i class="flag-icon flag-icon-es"></i></a>
 
             </div>
@@ -62,33 +62,35 @@
                     <!--Grid column-->
                     <div class="fadeIn animated col-md-6 white-text text-center text-md-left mt-xl-5 mb-5 wow "
                         data-wow-delay="0.3s">
-                        <h1 class="h1-responsive font-weight-bold mt-sm-5"  class="fadeIn animated" *ngIf="!show">Vinculación del cambio global
+                        <h1 class="h1-responsive font-weight-bold mt-sm-5" class="fadeIn animated" *ngIf="!show">
+                            Vinculación del cambio global
                             con la
                             conservación del suelo y el agua en los altos Andes</h1>
-                        <h1 class="h1-responsive font-weight-bold mt-sm-5"  class="fadeIn animated" *ngIf="show">
+                        <h1 class="h1-responsive font-weight-bold mt-sm-5" class="fadeIn animated" *ngIf="show">
 
                             Linking global change with soil and water conservation in the High Andes
 
                         </h1>
                         <hr class="hr-light">
-                        <h6 class="mb-4"*ngIf="!show" class="fadeIn animated">
+                        <h6 class="mb-4" *ngIf="!show" class="fadeIn animated">
                             Contribuir a la gestión sostenible de los servicios de agua en los ecosistemas de páramo
                             mediante la generación de evidencia científica sobre la conservación y restauración de los
                             suelos del páramo, y sobre su función de regulación hidrológica vital en los Andes.
                         </h6>
                         <h6 class="mb-4" *ngIf="show" class="fadeIn animated">
-                            The project will contribute to sustainable ecosystem management by strengthening evidence-based
+                            The project will contribute to sustainable ecosystem management by strengthening
+                            evidence-based
                             research on conservation and restoration of páramo soils, and on their vital hydrological
                             regulation function in the High Andes.
                         </h6>
 
-                       
 
-                        <a data-scroll mdbBtn class="fadeInLeft animated" *ngIf="!show" color="white" outline="true" mdbWavesEffect
-                            href="inicio#leermas">Entérate</a>
 
-                            <a data-scroll mdbBtn class="fadeInLeft animated" *ngIf="show" color="white" outline="true" mdbWavesEffect
-                            href="inicio#leermas">Find out</a>
+                        <a data-scroll mdbBtn class="fadeInLeft animated" *ngIf="!show" color="white" outline="true"
+                            mdbWavesEffect href="inicio#leermas">Entérate</a>
+
+                        <a data-scroll mdbBtn class="fadeInLeft animated" *ngIf="show" color="white" outline="true"
+                            mdbWavesEffect href="inicio#leermas">Find out</a>
                     </div>
                     <!--Grid column-->
                     <!--Grid column-->
@@ -115,18 +117,19 @@
 
 
 
-<app-resumen show="!show"></app-resumen>
+<app-resumen [show]="show"></app-resumen>
 
-<app-problemas ></app-problemas>
 
-<app-sitios-estudio></app-sitios-estudio>
+<app-objetivos-especificos [ingles]="show"></app-objetivos-especificos>
 
-<app-temas-cientificos></app-temas-cientificos>
+<app-sitios-estudio [ingles]="show"></app-sitios-estudio>
 
-<app-socios-academicos></app-socios-academicos>
+<app-temas-cientificos [ingles]="show"></app-temas-cientificos>
 
-<app-empresas-asociadas></app-empresas-asociadas>
+<app-socios-academicos [ingles]="show"></app-socios-academicos>
 
-<app-equipo></app-equipo>
+<app-empresas-asociadas [ingles]="show"></app-empresas-asociadas>
 
-<app-contacto></app-contacto>
+<app-equipo [ingles]="show"></app-equipo>
+
+<app-contacto [ingles]="show"></app-contacto>

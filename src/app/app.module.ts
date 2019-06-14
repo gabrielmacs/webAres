@@ -16,7 +16,7 @@ import { ButtonsModule, InputsModule } from 'angular-bootstrap-md'
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { InicioComponent } from './rutas/inicio/inicio.component';
 import { ResumenComponent } from './componentes/resumen/resumen.component';
-import { ProblemasComponent } from './componentes/problemas/problemas.component';
+
 import { SociosAcademicosComponent } from './componentes/socios-academicos/socios-academicos.component';
 import { EmpresasAsociadasComponent } from './componentes/empresas-asociadas/empresas-asociadas.component';
 import { EquipoComponent } from './componentes/equipo/equipo.component';
@@ -38,7 +38,7 @@ import { DatosComponent } from './rutas/datos/datos.component';
     CarrouselPortadaComponent,
     InicioComponent,
     ResumenComponent,
-    ProblemasComponent,
+    
     SociosAcademicosComponent,
     EmpresasAsociadasComponent,
     EquipoComponent,

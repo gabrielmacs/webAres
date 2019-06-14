@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-objetivos-especificos',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ObjetivosEspecificosComponent implements OnInit {
 
+  
+  @Input () ingles:boolean;
   constructor() { }
 
   ngOnInit() {

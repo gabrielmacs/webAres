@@ -1,147 +1,213 @@
+<section class="my-5 mx-5" *ngIf="!ingles">
+    <br>
+    <!-- Section heading -->
+    <h2 class="h1-responsive font-weight-bold text-center my-5">Escríbenos</h2>
+    <!-- Section description -->
+    <h5 class="text-center w-responsive mx-auto mb-5 grey-text">Si necesita más información, puede solicitarla
+        enviándonos un
+        correo electrónico, mediante las redes sociales o llamar a cualquiera de los números de contacto que se
+        encuentran en esta página.</h5>
 
+    <!-- Grid row -->
+    <div class="row">
 
+        <!-- Grid column -->
+        <div class="col-md-9 mb-md-0 mb-5">
 
+            <form>
 
+                <!-- Grid row -->
+                <div class="row">
 
+                    <!-- Grid column -->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="contact-name" class="form-control" mdbInput>
+                            <label for="contact-name" class="">Nombre</label>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
 
+                    <!-- Grid column -->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="contact-email" class="form-control" mdbInput>
+                            <label for="contact-email" class="">Correo</label>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
 
+                </div>
+                <!-- Grid row -->
 
-<!-- Section: Contact v.2 -->
-<section class="my-5 mx-5">
-<br>
-  <!-- Section heading -->
-  <h2 class="h1-responsive font-weight-bold text-center my-5">Escríbenos</h2>
-  <!-- Section description -->
-  <h5 class="text-center w-responsive mx-auto mb-5 grey-text">Si necesita más información, puede solicitarla enviándonos un
-      correo electrónico, mediante las redes sociales o llamar a cualquiera de los números de contacto que se
-      encuentran en esta página.</h5>
+                <!-- Grid row -->
+                <div class="row">
 
-  <!-- Grid row -->
-  <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="contact-Subject" class="form-control" mdbInput>
+                            <label for="contact-Subject" class="">Asunto</label>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
 
-      <!-- Grid column -->
-      <div class="col-md-9 mb-md-0 mb-5">
+                </div>
+                <!-- Grid row -->
 
-          <form>
+                <!-- Grid row -->
+                <div class="row">
 
-              <!-- Grid row -->
-              <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-12">
+                        <div class="md-form">
+                            <textarea type="text" id="contact-message" class="form-control md-textarea" rows="3"
+                                mdbInput></textarea>
+                            <label for="contact-message">Su mensaje</label>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
 
-                  <!-- Grid column -->
-                  <div class="col-md-6">
-                      <div class="md-form mb-0">
-                          <input type="text" id="contact-name" class="form-control" mdbInput>
-                          <label for="contact-name" class="">Nombre</label>
-                      </div>
-                  </div>
-                  <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
 
-                  <!-- Grid column -->
-                  <div class="col-md-6">
-                      <div class="md-form mb-0">
-                          <input type="text" id="contact-email" class="form-control" mdbInput>
-                          <label for="contact-email" class="">Correo</label>
-                      </div>
-                  </div>
-                  <!-- Grid column -->
+            </form>
 
-              </div>
-              <!-- Grid row -->
+            <div class="text-center text-md-left">
+                <a mdbBtn color="primary" mdbWavesEffect>Enviar</a>
+            </div>
 
-              <!-- Grid row -->
-              <div class="row">
+        </div>
+        <!-- Grid column -->
 
-                  <!-- Grid column -->
-                  <div class="col-md-12">
-                      <div class="md-form mb-0">
-                          <input type="text" id="contact-Subject" class="form-control" mdbInput>
-                          <label for="contact-Subject" class="">Asunto</label>
-                      </div>
-                  </div>
-                  <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li>
+                    <i class="fas fa-map-marked fa-2x blue-text"></i>
+                    <p>Ladron de Guevera E11-253, Quito 170517</p>
+                    <p>Quito-Ecuador</p>
+                </li>
+                <li>
+                    <i class="fas fa-phone fa-2x mt-4 blue-text"></i>
+                    <p>(+593) 2 2976 300</p>
+                </li>
+                <li>
+                    <i class="fas fa-envelope fa-2x mt-4 blue-text"></i>
+                    <p class="mb-0">info@epn.edu.ec</p>
+                </li>
+            </ul>
+        </div>
+        <!-- Grid column -->
 
-              </div>
-              <!-- Grid row -->
-
-              <!-- Grid row -->
-              <div class="row">
-
-                  <!-- Grid column -->
-                  <div class="col-md-12">
-                      <div class="md-form">
-                          <textarea type="text" id="contact-message" class="form-control md-textarea" rows="3"
-                              mdbInput></textarea>
-                          <label for="contact-message">Su mensaje</label>
-                      </div>
-                  </div>
-                  <!-- Grid column -->
-
-              </div>
-              <!-- Grid row -->
-
-          </form>
-
-          <div class="text-center text-md-left">
-              <a mdbBtn color="primary" mdbWavesEffect>Enviar</a>
-          </div>
-
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-3 text-center">
-          <ul class="list-unstyled mb-0">
-              <li>
-                  <i class="fas fa-map-marked fa-2x blue-text"></i>
-                  <p>Ladron de Guevera E11-253, Quito 170517</p>
-                  <p>Quito-Ecuador</p>
-              </li>
-              <li>
-                  <i class="fas fa-phone fa-2x mt-4 blue-text"></i>
-                  <p>(+593) 2 2976 300</p>
-              </li>
-              <li>
-                  <i class="fas fa-envelope fa-2x mt-4 blue-text"></i>
-                  <p class="mb-0">info@epn.edu.ec</p>
-              </li>
-          </ul>
-      </div>
-      <!-- Grid column -->
-
-  </div>
-  <!-- Grid row -->
+    </div>
+    <!-- Grid row -->
 
 </section>
-<!-- Section: Contact v.2 -->
 
 
 
+<section class="my-5 mx-5" *ngIf="ingles">
+    <br>
+    <!-- Section heading -->
+    <h2 class="h1-responsive font-weight-bold text-center my-5">Write us</h2>
+    <!-- Section description -->
+    <h5 class="text-center w-responsive mx-auto mb-5 grey-text">If you need more information, you can request it by
+        sending us an email, through social networks or by calling any of the contact numbers found on this page.</h5>
 
+    <!-- Grid row -->
+    <div class="row">
 
+        <!-- Grid column -->
+        <div class="col-md-9 mb-md-0 mb-5">
 
+            <form>
 
+                <!-- Grid row -->
+                <div class="row">
 
+                    <!-- Grid column -->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="contact-name" class="form-control" mdbInput>
+                            <label for="contact-name" class="">Name</label>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
 
+                    <!-- Grid column -->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="contact-email" class="form-control" mdbInput>
+                            <label for="contact-email" class="">Email</label>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
 
+                </div>
+                <!-- Grid row -->
 
+                <!-- Grid row -->
+                <div class="row">
 
+                    <!-- Grid column -->
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="contact-Subject" class="form-control" mdbInput>
+                            <label for="contact-Subject" class="">Subject</label>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
 
+                </div>
+                <!-- Grid row -->
 
+                <!-- Grid row -->
+                <div class="row">
 
+                    <!-- Grid column -->
+                    <div class="col-md-12">
+                        <div class="md-form">
+                            <textarea type="text" id="contact-message" class="form-control md-textarea" rows="3"
+                                mdbInput></textarea>
+                            <label for="contact-message">Your message</label>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
 
+                </div>
+                <!-- Grid row -->
 
+            </form>
 
+            <div class="text-center text-md-left">
+                <a mdbBtn color="primary" mdbWavesEffect>Send</a>
+            </div>
 
+        </div>
+        <!-- Grid column -->
 
+        <!-- Grid column -->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li>
+                    <i class="fas fa-map-marked fa-2x blue-text"></i>
+                    <p>Ladron de Guevera E11-253, Quito 170517</p>
+                    <p>Quito-Ecuador</p>
+                </li>
+                <li>
+                    <i class="fas fa-phone fa-2x mt-4 blue-text"></i>
+                    <p>(+593) 2 2976 300</p>
+                </li>
+                <li>
+                    <i class="fas fa-envelope fa-2x mt-4 blue-text"></i>
+                    <p class="mb-0">info@epn.edu.ec</p>
+                </li>
+            </ul>
+        </div>
+        <!-- Grid column -->
 
+    </div>
+    <!-- Grid row -->
 
-
-
-
-
-
-
-
-
-
-
+</section>
